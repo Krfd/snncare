@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+
+        <!-- icon -->
+        <link rel="icon" type="icon" href="logo/SNNCARE.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+
+        <!-- JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- External CSS-->
+        <link rel="stylesheet" href="register.css" />
+    </head>
+    <body>
+        <div class="container form mt-5">
+            <h1 class="title">ADMIN REGISTER</h1>
+            <form
+                action="admin.php"
+                method="post"
+                class="form-field"
+                enctype="multipart/form-data"
+            >
+                <fieldset>
+                    <div class="row">
+                        <div class="col form-floating">
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="fname"
+                                placeholder="Full Name"
+                                required
+                                maxlength="100"
+                            />
+                            <label for="fname">Full Name</label>
+                        </div>
+                        <div class="col form-floating">
+                            <input
+                                type="email"
+                                class="form-control"
+                                name="email"
+                                placeholder="Email"
+                                required
+                                maxlength="100"
+                            />
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-floating">
+                            <input
+                                list="country"
+                                type="text"
+                                class="form-control"
+                                name="country"
+                                placeholder="Country"
+                                required
+                                maxlength="100"
+                            />
+                            <label for="country">Country</label>
+                            <datalist id="country">
+                                <option value="Argentina">Argentina</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Canada">Canada</option>
+                                <option value="China">China</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Dominican Republic">
+                                    Dominican Republic
+                                </option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Papua New Guinea">
+                                    Papua New Guinea
+                                </option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Saudi Arabia">
+                                    Saudi Arabia
+                                </option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Kingdom">
+                                    United Kingdom
+                                </option>
+                                <option value="United States of America">
+                                    United States of America
+                                </option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </datalist>
+                        </div>
+                        <div class="col form-floating">
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="address"
+                                placeholder="Address"
+                                required
+                                maxlength="100"
+                            />
+                            <label for="address">Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-floating">
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="phone"
+                                placeholder="Phone"
+                                required
+                                maxlength="11"
+                            />
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="col form-floating">
+                            <input
+                                type="file"
+                                class="form-control"
+                                name="image"
+                                placeholder="Profile"
+                                required
+                            />
+                            <label for="profile">Profile</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-floating">
+                            <input
+                                type="password"
+                                class="form-control"
+                                name="password"
+                                id="password"
+                                placeholder="Password"
+                                required
+                                maxlength="100"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one UPPERCASE 
+                   and lowercase letter, and at least 8 or more characters."
+                            />
+                            <label for="password">Password</label>
+                            <input type="checkbox" onclick="show()" /> Show
+                            Password
+                            <script>
+                                function show() {
+                                    var x = document.getElementById("password");
+                                    var y = document.getElementById("confirm");
+                                    if (
+                                        x.type === "password" &&
+                                        y.type === "password"
+                                    ) {
+                                        x.type = "text";
+                                        y.type = "text";
+                                    } else {
+                                        x.type = "password";
+                                        y.type = "password";
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div class="col form-floating">
+                            <input
+                                type="password"
+                                class="form-control"
+                                name="confirm"
+                                id="confirm"
+                                placeholder="Confirm Password"
+                                required
+                                maxlength="100"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one UPPERCASE 
+                   and lowercase letter, and at least 8 or more characters."
+                            />
+                            <label for="confirm">Confirm Password</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button
+                            type="submit"
+                            name="register"
+                            class="register w-100"
+                        >
+                            Register
+                        </button>
+                    </div>
+                    <div class="col login">
+                        <p>Back to <a href="admin_login.html">Login</a></p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
